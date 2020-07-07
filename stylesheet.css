@@ -1,0 +1,109 @@
+body{
+    padding:0;
+    margin:0;
+    background:linear-gradient(deepskyblue,lawngreen, orange);
+}
+
+h1 {
+    text-shadow:3px 3px 2px purple;
+    color:red;
+    font-family:fantasy;
+    font-weight:40px;
+    font-size:25px;
+}
+
+h4{
+    text-indent:10px;
+    color:white;
+    background:black;
+    text-align:center;
+    
+}
+
+.skew{
+    height:100px;
+    width:200px;
+    background-color:gold;
+    margin-top:10px;
+    margin-left:50px;
+    transition:3s;
+    border:2px solid black;
+    text-align:center;
+}
+.skew:hover{
+    transform:skew(-20deg );
+}
+
+.rotate {
+    height:100px;
+    width:100px;
+    background-color:purple;
+    margin-top:10px;
+    margin-left:50px;
+    transition:3s;
+    border:2px solid black;
+}
+.rotate:hover{
+    transform:rotate(360deg);
+}
+
+.translate{
+    height:100px;
+    width:100px;
+    background-color:red;
+    border-radius:100%;
+    margin-top:10px;
+    margin-left:50px;
+    transition:3s;
+    border:2px solid black;
+}
+.translate:hover{
+    transform:translate(150px);
+}
+
+.transorigin{
+    height:100px;
+    width:100px;
+    background-color:blue;
+    margin-top:10px;
+    margin-left:50px;
+    transition:3s;
+    border:2px solid black;
+    transform-origin:100px 100px ;
+    margin-top:45px;
+}
+.transorigin:hover{
+    transform:rotate(90deg)
+}
+
+.bounce{
+    height:100px;
+    width:100px;
+    background-color:black;
+    animation-name:vaccum;
+    margin-left:130px;
+    border-radius:100%;
+    border:2px solid black;
+    margin-top:100px;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-iteration-count:infinite;
+}
+@keyframes vaccum{
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-95px);}
+}
+h3{
+    text-decoration:underline;
+    text-align:center;
+}
+
+footer{
+    margin-top:10px;
+    color:blue;
+    
+}
+footer:hover{
+    color:puple;
+    text-decoration:underline;
+}
